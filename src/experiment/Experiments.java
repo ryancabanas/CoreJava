@@ -13,6 +13,27 @@ public class Experiments
 {
   public static void main(String[] args)
   {
-    System.out.println("Fart\n\bFast");
+    // Testing the backspace escape sequence.
+//    System.out.println("Fart\n\bFast");
+    
+    //Testing out how the floorMod and floorDiv methods work.  Read the documentation.
+//    System.out.println(Math.floorMod(4, -3));
+//    System.out.println(Math.floorMod(5, -3));
+//    System.out.println(-4 / 3);
+//    System.out.println(Math.floorDiv(-4, 3));
+    // Didn't know this, but a modulus is calculated as: (x - ((x/y) * y)).
+    
+    //Testing bitwise operators
+    int testAND = 8 & 9;
+    System.out.println(Integer.toBinaryString(8) + " & " + Integer.toBinaryString(9)
+            + " = " + Integer.toBinaryString(testAND));
+    
+    int testOR = 1 | 2 | 4;
+    System.out.println(
+            Integer.toBinaryString(1)
+                    + " | " + Integer.toBinaryString(2)
+                    + " | " + Integer.toBinaryString(4)
+                    + " = " + Integer.toBinaryString(testOR));
+    
   }
 }
