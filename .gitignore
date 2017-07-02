@@ -1,0 +1,4 @@
+#Java folders that I want to ignore from being tracked by Git.
+build/
+test/
+nbproject/private
