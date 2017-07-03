@@ -92,6 +92,19 @@ public class Experiments
     // on the left edge for fill in the spaces.  This really only makes a difference if you're
     // shifting a negative number.
     
+//    String test = "Hello";
+//    int index = test.offsetByCodePoints(0, 1);
+//    System.out.println(test.charAt(index));
+//    
+//    System.out.println(Integer.parseUnsignedInt("1111111111111111", 2));
+//    System.out.println("0x" + Integer.toString(65535, 16));
+      
+//    System.out.println("help".startsWith("e", 1));
+//    System.out.println("help".startsWith("h"));
+//    System.out.println("help".endsWith("p"));
+//    System.out.println("help".indexOf('e'));
+    
+    
   }
   
   private static String toPaddedBinaryString(int number, int width) {
