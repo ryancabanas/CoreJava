@@ -5,11 +5,13 @@
  */
 package experiment;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Ryan Cabanas
  */
-public class Experiments
+public class Chapter03
 {
   public static void main(String[] args)
   {
@@ -104,6 +106,20 @@ public class Experiments
 //    System.out.println("help".endsWith("p"));
 //    System.out.println("help".indexOf('e'));
     
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter a number: ");
+//    if (input.hasNextDouble()) {
+//      double value = input.nextDouble();
+//      System.out.println(value);
+//    } else {
+//      String word = input.next();      
+//      System.out.println(word);
+//    }
+    if (input.hasNextLine()) {
+      String sentence = input.nextLine();
+      System.out.println(sentence);
+    }
+
     
   }
   
