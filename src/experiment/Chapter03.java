@@ -7,6 +7,8 @@ package experiment;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -153,6 +155,17 @@ public class Chapter03
 //    char[] d = new char[5];
 //    System.out.println(d[0]);
     
+//    int max = 100;
+//    int min = 99;
+//    Random random = new Random();
+//    System.out.println(random.nextInt(max - min + 1) + min);
+    
+//    int[] test = {0, 2, 3};
+//    System.out.println(Arrays.binarySearch(test, 1));
+    
+//    int[] test = new int[10];
+//    Arrays.fill(test, 99);
+//    System.out.println(Arrays.toString(test));
     
     
     
