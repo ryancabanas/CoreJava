@@ -5,6 +5,8 @@
  */
 package experiment;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Scanner;
 
 /**
@@ -106,20 +108,53 @@ public class Chapter03
 //    System.out.println("help".endsWith("p"));
 //    System.out.println("help".indexOf('e'));
     
-    Scanner input = new Scanner(System.in);
-    System.out.print("Enter a number: ");
-//    if (input.hasNextDouble()) {
-//      double value = input.nextDouble();
-//      System.out.println(value);
-//    } else {
-//      String word = input.next();      
-//      System.out.println(word);
+//    Scanner input = new Scanner(System.in);
+//    System.out.print("Enter a number: ");
+////    if (input.hasNextDouble()) {
+////      double value = input.nextDouble();
+////      System.out.println(value);
+////    } else {
+////      String word = input.next();      
+////      System.out.println(word);
+////    }
+//    if (input.hasNextLine()) {
+//      String sentence = input.nextLine();
+//      System.out.println(sentence);
 //    }
-    if (input.hasNextLine()) {
-      String sentence = input.nextLine();
-      System.out.println(sentence);
-    }
+    
+//    double aDouble = 10;
+//    double bDouble = 11;
+//    String aString = "test";
+//    String bString = "boot";
+//    System.out.printf("%2$.2f, %<.2f\n", aDouble, bDouble);
+    // If you specify an index for one argument, but not the others, the others will always use
+    // the first argument.  The "<" symbol just means to use the same argument that was used for
+    // the previous format item.
 
+//    Scanner input;
+//    try {
+//      input = new Scanner(Paths.get("C:\\Users\\Ryan\\Desktop\\Test1.txt"), "UTF-8");
+//      while (input.hasNextLine()) {
+//        String sentence = input.nextLine();
+//        System.out.println(sentence);
+//      }      
+//    } catch (Exception e) {
+//      System.out.println(e);
+//    }
+
+//    System.out.println(System.getProperty("user.dir"));
+   
+//    int[] a = new int[5];
+//    System.out.println(a[0]);
+//    boolean[] b = new boolean[5];
+//    System.out.println(b[0]);
+//    String[] c = new String[5];
+//    System.out.println(c[0]);
+//    char[] d = new char[5];
+//    System.out.println(d[0]);
+    
+    
+    
     
   }
   
