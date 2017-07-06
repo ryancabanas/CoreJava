@@ -167,8 +167,7 @@ public class Chapter03
 //    Arrays.fill(test, 99);
 //    System.out.println(Arrays.toString(test));
     
-    
-    
+      
   }
   
   private static String toPaddedBinaryString(int number, int width) {
