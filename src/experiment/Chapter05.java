@@ -5,6 +5,8 @@
  */
 package experiment;
 
+import java.util.Objects;
+
 /**
  *
  * @author Ryan Cabanas
@@ -26,7 +28,15 @@ public class Chapter05 {
 //    
 //    System.out.println(b2.a + ", " + b2.b);
     
+    A a = new A(1);
+    A a2 = new A(1);
+
+    System.out.println(a.equals(a2));
+
+    B b = new B(1, 2);
+    B b2 = new B(1, 3);
     
+    System.out.println(b.equals(b2));
     
     
   }
@@ -38,6 +48,32 @@ class A {
   public A(int a) {
     this.a = a;
   }
+
+  @Override
+  public boolean equals(Object that) {
+    if (this == that) {
+      return true;
+    }
+
+    if (that == null) {
+     return false;
+    }
+
+    if (this.getClass() != that.getClass()) {
+      return false;
+    }
+
+    A thatA = (A) that;
+
+    return this.a == thatA.a;
+  }
+
+  @Override
+  public int hashCode() {
+    int hash = 5;
+    hash = 29 * hash + this.a;
+    return hash;
+  }
 }
 
 class B extends A {
@@ -46,5 +82,26 @@ class B extends A {
   public B(int a, int b) {
     super(a);
     this.b = b;
+  }
+
+  @Override
+  public boolean equals(Object that) {
+    // This call to the super.equals method re-uses the code so that here in the subclass you only
+    // have to test for instance fields that are specific to the subclass.  Re-use!  Don't write
+    // double code!
+    if (!super.equals(that)) {
+     return false;
+    }
+
+    B thatB = (B) that;
+
+    return this.b == thatB.b;
+  }
+
+  @Override
+  public int hashCode() {
+    int hash = 7;
+    hash = 71 * hash + this.b;
+    return hash;
   }
 }
