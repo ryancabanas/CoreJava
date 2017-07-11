@@ -5,6 +5,7 @@
  */
 package experiment;
 
+import java.io.File;
 import java.util.Objects;
 
 /**
@@ -28,22 +29,25 @@ public class Chapter05 {
 //    
 //    System.out.println(b2.a + ", " + b2.b);
     
-    A a = new A(1);
-    A a2 = new A(1);
-
-    System.out.println(a.equals(a2));
-
-    B b = new B(1, 2);
-    B b2 = new B(1, 3);
+//    A a = new A(1);
+//    A a2 = new A(1);
+//
+//    System.out.println(a.equals(a2));
+//
+//    B b = new B(1, 2);
+//    B b2 = new B(1, 3);
+//    
+//    System.out.println(b.equals(b2));
     
-    System.out.println(b.equals(b2));
-    
-    
+    System.getProperties().list(System.out);
+      
   }
 }
 
+
+
 class A {
-  public int a;
+  int a;
   
   public A(int a) {
     this.a = a;
@@ -74,6 +78,7 @@ class A {
     hash = 29 * hash + this.a;
     return hash;
   }
+  
 }
 
 class B extends A {
