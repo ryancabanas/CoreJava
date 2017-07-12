@@ -39,11 +39,21 @@ public class Chapter05 {
 //    
 //    System.out.println(b.equals(b2));
     
-    System.getProperties().list(System.out);
-      
+//    System.getProperties().list(System.out);
+//      
+//    EnumTest one = EnumTest.ONE;
+//    EnumTest three = EnumTest.THREE;
+    
+//    System.out.println(one.compareTo(three));
+    
+    
+
   }
 }
 
+enum EnumTest {
+  ONE, TWO, THREE, FOUR
+}
 
 
 class A {
