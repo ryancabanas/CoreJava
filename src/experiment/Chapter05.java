@@ -6,6 +6,8 @@
 package experiment;
 
 import java.io.File;
+import java.lang.reflect.Field;
+import java.util.Arrays;
 import java.util.Objects;
 
 /**
@@ -46,7 +48,21 @@ public class Chapter05 {
     
 //    System.out.println(one.compareTo(three));
     
-    
+//    Field[] test = A.class.getFields();
+//    for (Field field : test) {
+//      System.out.println(field.toGenericString());
+//    }
+
+    String[] test = new String[3];
+    test[0] = "a";
+    Object bubba = test;
+    String[] timmy = (String[]) bubba;
+    timmy[2] = "b";
+    System.out.println(Arrays.toString(timmy));
+
+
+
+
 
   }
 }
@@ -57,7 +73,7 @@ enum EnumTest {
 
 
 class A {
-  int a;
+  public int a;
   
   public A(int a) {
     this.a = a;
