@@ -9,6 +9,7 @@ import java.io.File;
 import java.lang.reflect.Field;
 import java.util.Arrays;
 import java.util.Objects;
+import java.util.Observable;
 
 /**
  *
@@ -60,6 +61,7 @@ public class Chapter05 {
     timmy[2] = "b";
     System.out.println(Arrays.toString(timmy));
 
+    Observable test1;
 
 
 
